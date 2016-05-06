@@ -1,7 +1,7 @@
 var fmosApp = angular.module('fmosApp');
 
 fmosApp.controller('DateController', ['day', function(day) {
-  this.day = day;
+  this.date = day.date;
 
-  this.stuff = 'hey there';
+  this.imageUrl = day.imageUrl;
 }]);
