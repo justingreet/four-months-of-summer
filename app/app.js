@@ -1,13 +1,18 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
+angular.module('fmosApp', [
   'ngRoute'
 ]).
 config(['$routeProvider', function($routeProvider) {
+  var getDay = function($route) {
+    var dayId = $route.current.params.dateId;
+    return {};
+  };
+
   $routeProvider.when('/dates/:dateId', {
     templateUrl: 'dates/date.html',
-    controller:,
+    controller: 'DateController',
     controllerAs: 'ctrl',
     resolve: {
       day: getDay
@@ -15,7 +20,3 @@ config(['$routeProvider', function($routeProvider) {
   });
   $routeProvider.otherwise({redirectTo: '/dates/1'});
 }]);
-
-getDay = function($route) {
-  var dayId = $route.current.params.dateId;
-};

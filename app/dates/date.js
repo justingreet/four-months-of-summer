@@ -1,3 +1,7 @@
-/**
- * Created by justin on 5/6/16.
- */
+var fmosApp = angular.module('fmosApp');
+
+fmosApp.controller('DateController', ['day', function(day) {
+  this.day = day;
+
+  this.stuff = 'hey there';
+}]);
