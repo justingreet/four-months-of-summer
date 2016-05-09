@@ -19,13 +19,29 @@ var dates = [
   {
     title: 'May 4, 2016',
     subtitle: '2k and chill',
-    imageUrl: '../img/stuffffs.jpg'
+    imageUrl: '../img/stufff.jpg'
   },
   {
     title: 'May 5, 2016',
     subtitle: 'The Google 5k',
     imageUrl: '../img/may52016.jpg'
+  },
+  {
+    title: 'May 6, 2016',
+    subtitle: 'Hacking the mainframe: the Megan Fiasconaro story',
+    imageUrl: '../img/may62016.jpg'
+  },
+  {
+    title: 'May 7, 2016',
+    subtitle: 'Let\'s Dance, and other 80s classics',
+    imageUrl: '../img/may72016.jpg'
+  },
+  {
+    title: 'May 8, 2016',
+    subtitle: 'Happy Mother\'s Day',
+    imageUrl: '../img/may82016.jpg'
   }
+
 ];
 
 // Declare app level module which depends on views, and components
