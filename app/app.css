@@ -26,7 +26,7 @@ body {
 }
 
 .description {
-  font-size: 1.5em;
+  font-size: 2.5vmin;
   font-weight: 300;
 }
 
@@ -41,12 +41,25 @@ body {
   z-index: -1000;
 }
 
+blockquote {
+  padding-left: 8px;
+  border-left: 4px solid white;
+}
+
 .footer {
   position: absolute;
   bottom: 8vh;
   height: 20vh;
   width: 100vw;
   overflow: hidden;
+}
+
+.footer.expanded {
+  height: 60vh;
+}
+
+.content {
+  padding: 0 5vw;
 }
 
 .colorizer {
@@ -58,6 +71,10 @@ body {
 .footer:hover .arrow {
   visibility: visible;
   opacity: 1;
+}
+
+.clickable:hover {
+  cursor: pointer;
 }
 
 /** COPIED */

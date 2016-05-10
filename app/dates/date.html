@@ -1,22 +1,27 @@
 <img class="background" src="{{ctrl.imageUrl}}">
-<div class="footer colorizer"></div>
-<div class="footer wrapper">
-    <div class="title-stuff">
-        <h1 class="title">{{ctrl.title}}</h1>
-        <h3 class="subtitle">{{ctrl.subtitle}}</h3>
-    </div>
-    <button class="arrow left" ng-click="ctrl.goToPrev()">
-        <svg width="36px" height="48px" viewBox="0 0 50 80" xml:space="preserve">
-    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-	45.63,75.8 0.375,38.087 45.63,0.375 "/>
-  </svg>
-    </button>
-    <button class="arrow right" ng-click="ctrl.goToNext()">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="48px"
-             viewBox="0 0 50 80" xml:space="preserve">
-    <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
-	0.375,0.375 45.63,38.087 0.375,75.8 "/>
-  </svg>
-    </button>
-    <!--<p class="description">This is a description of the day. It's not that long. One or three sentences.</p>-->
+<div class="footer colorizer" ng-class="{expanded: ctrl.isExpanded}"></div>
+<div class="footer wrapper" ng-class="{clickable: !!ctrl.description, expanded: ctrl.isExpanded}"
+     ng-click="ctrl.toggleExpansion()">
+    <section>
+        <div class="title-stuff">
+            <h1 class="title">{{ctrl.title}}</h1>
+            <h3 class="subtitle">{{ctrl.subtitle}}</h3>
+        </div>
+        <button class="arrow left" ng-click="ctrl.goToPrev()">
+            <svg width="36px" height="48px" viewBox="0 0 50 80" xml:space="preserve">
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                45.63,75.8 0.375,38.087 45.63,0.375 "/>
+            </svg>
+        </button>
+        <button class="arrow right" ng-click="ctrl.goToNext()">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="48px"
+                 viewBox="0 0 50 80" xml:space="preserve">
+                <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+                0.375,0.375 45.63,38.087 0.375,75.8 "/>
+             </svg>
+        </button>
+    </section>
+    <section ng-if="ctrl.isExpanded" class="content">
+        <div ng-if="ctrl.description" class="description" ng-bind-html="ctrl.description"></div>
+    </section>
 </div>
