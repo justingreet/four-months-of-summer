@@ -49,7 +49,7 @@ var dates = [
     title: 'May 8, 2016',
     subtitle: 'Happy Mother\'s Day',
     imageUrl: '../img/may82016.jpg',
-    description: '<p>Drink up you crazy kids. Married for almost 40 years,' +
+    description: '<p>Drink up you crazy kids. Married for almost 39 years,' +
     ' and you\'re still overjoyed when your kids take you out to lunch. Look' +
     ' at your eyes. You\'re present in a way I only hope to be most of the' +
     ' time.</p><p>Here\'s to 40 more.</p>'
@@ -72,8 +72,44 @@ var dates = [
     ' yourself to the fullest within your individual limits: that\'s the ' +
     'essence of running, and a metaphor for life - and for me, for writing as' +
     ' well.</blockquote>'
+  },
+  {
+    title: 'May 10, 2016',
+    subtitle: 'The Lovers and the Despot',
+    imageUrl: '../img/may102016.jpg'
+  },
+  {
+    title: 'May 11, 2016',
+    subtitle: 'Protest at sunset',
+    imageUrl: '../img/may112016.jpg'
+  },
+  {
+    title: 'May 12, 2016',
+    subtitle: 'The most expensive Bar Mitzvah of all-time',
+    imageUrl: '../img/may122016.jpg'
+  },
+  {
+    title: 'May 13, 2016',
+    subtitle: 'Boardgames at work',
+    imageUrl: '../img/may132016.jpg'
+  },
+  {
+    title: 'May 14, 2016',
+    subtitle: 'Some dim sum and a rogue wave',
+    imageUrl: '../img/may142016.jpg'
+  },
+  {
+    title: 'May 15, 2016',
+    subtitle: 'French toast for people with OCD',
+    imageUrl: '../img/may152016.jpg',
+    description: '<p>I\'m in the sort of haze of haze I generally find myself ' +
+    'in after a night of drinking. My mind sets out a list of concrete goals to ' +
+    'accomplish, but my body betrays my discipline. I took an extended nap, ' +
+    'watched an episode of the West Wing, and finished reading the Marukami ' +
+    'book. Now I\'m staring at a hamper overflowing with dirty clothes to be ' +
+    'washed. and pecking away into the computer screen hoping I can find the ' +
+    'resolve at some point tonight to get some app work done.</p>'
   }
-
 ];
 
 // Declare app level module which depends on views, and components
